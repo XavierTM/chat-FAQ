@@ -1,0 +1,5 @@
+
+**/db.sqlite
+**/.env
+**/package-lock.json
+**/node_modules/
