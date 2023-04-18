@@ -1,14 +1,156 @@
-<mxfile host="Electron" modified="2023-04-17T19:05:30.337Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="ha27C0jP3XASnm6ynmzz" version="21.1.2" type="device">
-  <diagram name="Page-1" id="wdH4Dgw9e2VR54VIVrEj">
+<mxfile host="Electron" modified="2023-04-18T07:20:04.182Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.1.2 Chrome/106.0.5249.199 Electron/21.4.3 Safari/537.36" etag="A_t7Uv0-UglujMRBywq3" version="21.1.2" type="device" pages="3">
+  <diagram name="Use case" id="wdH4Dgw9e2VR54VIVrEj">
     <mxGraphModel dx="1306" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="TuvFGBwVKn6KRmKXpwT7-1" value="CHAT-FAQ" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-1" value="CHAT-FAQ" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="190" y="130" width="960" height="740" as="geometry" />
         </mxCell>
-        <mxCell id="TuvFGBwVKn6KRmKXpwT7-2" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="70" y="270" width="30" height="60" as="geometry" />
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-3" value="Login" style="ellipse;whiteSpace=wrap;html=1;" parent="TuvFGBwVKn6KRmKXpwT7-1" vertex="1">
+          <mxGeometry x="110" y="80" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-4" value="Manage chat&lt;br&gt;branches" style="ellipse;whiteSpace=wrap;html=1;" parent="TuvFGBwVKn6KRmKXpwT7-1" vertex="1">
+          <mxGeometry x="110" y="180" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-8" value="Chat" style="ellipse;whiteSpace=wrap;html=1;" parent="TuvFGBwVKn6KRmKXpwT7-1" vertex="1">
+          <mxGeometry x="710" y="80" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-9" value="Browse contacts" style="ellipse;whiteSpace=wrap;html=1;" parent="TuvFGBwVKn6KRmKXpwT7-1" vertex="1">
+          <mxGeometry x="710" y="190" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-10" value="Manage contacts" style="ellipse;whiteSpace=wrap;html=1;" parent="TuvFGBwVKn6KRmKXpwT7-1" vertex="1">
+          <mxGeometry x="110" y="300" width="135" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-2" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="70" y="320" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-7" value="Customer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="1260" y="282" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-11" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TuvFGBwVKn6KRmKXpwT7-2" target="TuvFGBwVKn6KRmKXpwT7-3" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="140" y="100" as="sourcePoint" />
+            <mxPoint x="300" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-12" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TuvFGBwVKn6KRmKXpwT7-2" target="TuvFGBwVKn6KRmKXpwT7-4" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="110" y="300" as="sourcePoint" />
+            <mxPoint x="290" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-14" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TuvFGBwVKn6KRmKXpwT7-2" target="TuvFGBwVKn6KRmKXpwT7-10" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="130" y="320" as="sourcePoint" />
+            <mxPoint x="330" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-15" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="TuvFGBwVKn6KRmKXpwT7-8" target="TuvFGBwVKn6KRmKXpwT7-7" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1100" y="180" as="sourcePoint" />
+            <mxPoint x="1260" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TuvFGBwVKn6KRmKXpwT7-16" value="" style="edgeStyle=none;html=1;endArrow=none;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="TuvFGBwVKn6KRmKXpwT7-9" target="TuvFGBwVKn6KRmKXpwT7-7" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="970" y="440" as="sourcePoint" />
+            <mxPoint x="1170" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2Da1z96J7DU_1w3PeuoN" name="ERD">
+    <mxGraphModel dx="1306" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Df7SnuqgDN1D5QpteDRe-1" value="Branch" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="194" y="161" width="160" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="Df7SnuqgDN1D5QpteDRe-2" value="- id INT (PK)&lt;br&gt;- title STRING&lt;br&gt;- body STRING&lt;br&gt;- parent INT (FK-ish)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="Df7SnuqgDN1D5QpteDRe-1" vertex="1">
+          <mxGeometry y="30" width="160" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="Df7SnuqgDN1D5QpteDRe-3" value="Media" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="161" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Df7SnuqgDN1D5QpteDRe-4" value="- id INT (PK)&lt;br&gt;- ext STRING&lt;br&gt;- branch INT (FK)" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="Df7SnuqgDN1D5QpteDRe-3" vertex="1">
+          <mxGeometry y="30" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XxPyrstF_HF181X2ngVl-1" value="Contact" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="194" y="295" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="XxPyrstF_HF181X2ngVl-2" value="- id INT (PK)&lt;br&gt;- name STRING&lt;br&gt;- email STRING&lt;br&gt;- phone STRING&lt;br&gt;- bio STRING" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="XxPyrstF_HF181X2ngVl-1" vertex="1">
+          <mxGeometry y="30" width="160" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="tT9azpjiMIabiMTu2rVR" name="UX">
+    <mxGraphModel dx="1306" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LPbm_n4jgf8ejLYUPbpk-1" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="1" vertex="1">
+          <mxGeometry x="220" y="70" width="440" height="820" as="geometry" />
+        </mxCell>
+        <mxCell id="XvQVQaodpklGXBEJbjT0-1" value="Welcome to ChatFAQ" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
+          <mxGeometry x="240" y="370" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XvQVQaodpklGXBEJbjT0-2" value="Go to chat" style="dashed=0;html=1;fillColor=#F0F2F5;strokeColor=none;align=center;rounded=1;arcSize=10;fontColor=#3384FF;fontStyle=1;fontSize=11;shadow=0" parent="1" vertex="1">
+          <mxGeometry x="290" y="470" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XvQVQaodpklGXBEJbjT0-3" value="Browse contacts" style="dashed=0;html=1;fillColor=#F0F2F5;strokeColor=none;align=center;rounded=1;arcSize=10;fontColor=#3384FF;fontStyle=1;fontSize=11;shadow=0" parent="1" vertex="1">
+          <mxGeometry x="290" y="530" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XvQVQaodpklGXBEJbjT0-5" value="Log in" style="dashed=0;html=1;fillColor=#F0F2F5;strokeColor=none;align=center;rounded=1;arcSize=10;fontColor=#3384FF;fontStyle=1;fontSize=11;shadow=0" parent="1" vertex="1">
+          <mxGeometry x="291" y="590" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XvQVQaodpklGXBEJbjT0-6" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="1" vertex="1">
+          <mxGeometry x="720" y="70" width="440" height="820" as="geometry" />
+        </mxCell>
+        <mxCell id="XvQVQaodpklGXBEJbjT0-7" value="Contacts" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry x="789" y="160" width="271" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XvQVQaodpklGXBEJbjT0-12" value="" style="html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=6;shape=mxgraph.ios7.misc.left;strokeColor=#0080f0;" parent="1" vertex="1">
+          <mxGeometry x="759" y="166" width="16" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="XvQVQaodpklGXBEJbjT0-13" value="Eng Mukodi" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="759" y="230" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XvQVQaodpklGXBEJbjT0-14" value="Expect in renewable energy&lt;br&gt;Email: xaviermukodi@gmail.com&lt;br&gt;Phone number: 0715919589" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="760" y="266" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ziC5LYm4gHiFdjw3lwSH-1" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.markup.line;strokeColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="740" y="326" width="400" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ziC5LYm4gHiFdjw3lwSH-5" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shadow=0;dashed=0;strokeWidth=1;shape=mxgraph.android.phone2;strokeColor=#c0c0c0;" parent="1" vertex="1">
+          <mxGeometry x="210" y="960" width="440" height="820" as="geometry" />
+        </mxCell>
+        <mxCell id="ziC5LYm4gHiFdjw3lwSH-6" value="Contacts" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry x="279" y="1050" width="271" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ziC5LYm4gHiFdjw3lwSH-7" value="" style="html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=6;shape=mxgraph.ios7.misc.left;strokeColor=#0080f0;" parent="1" vertex="1">
+          <mxGeometry x="249" y="1056" width="16" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="ziC5LYm4gHiFdjw3lwSH-8" value="Eng Mukodi" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="249" y="1120" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ziC5LYm4gHiFdjw3lwSH-9" value="Expect in renewable energy&lt;br&gt;Email: xaviermukodi@gmail.com&lt;br&gt;Phone number: 0715919589" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="250" y="1156" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ziC5LYm4gHiFdjw3lwSH-10" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.markup.line;strokeColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="230" y="1216" width="400" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ziC5LYm4gHiFdjw3lwSH-11" value="Eng Mukodi" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="249" y="1250" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ziC5LYm4gHiFdjw3lwSH-12" value="Expect in renewable energy&lt;br&gt;Email: xaviermukodi@gmail.com&lt;br&gt;Phone number: 0715919589" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="250" y="1286" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ziC5LYm4gHiFdjw3lwSH-13" value="" style="verticalLabelPosition=bottom;shadow=0;dashed=0;align=center;html=1;verticalAlign=top;strokeWidth=1;shape=mxgraph.mockup.markup.line;strokeColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="230" y="1346" width="400" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
