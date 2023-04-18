@@ -1,0 +1,47 @@
+{
+   "object": "whatsapp_business_account",
+   "entry": [
+      {
+         "id": "103829105733386",
+         "changes": [
+            {
+               "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                     "display_phone_number": "{{wa_receiver_phone}}",
+                     "phone_number_id": "{{wa_receiver_phone_id}}"
+                  },
+                  "contacts": [
+                     {
+                        "profile": {
+                           "name": "{{wa_sender_profile_name}}"
+                        },
+                        "wa_id": "{{wa_sender_phone}}"
+                     }
+                  ],
+                  "messages": [
+                     {
+                        "context": {
+                           "from": "{{wa_receiver_phone}}",
+                           "id": "wamid.HBgMMjYzNzgzOTExNzE0FQIAERgSRDRCMzNEQUM3ODUxQ0U1Q0JGAA=="
+                        },
+                        "from": "{{wa_sender_phone}}",
+                        "id": "wamid.HBgMMjYzNzgzOTExNzE0FQIAEhggREFBMzZDODY2RURCMDRCRTk3QzI1NDgxMDE1NDYwMTMA",
+                        "timestamp": "1679667711",
+                        "type": "interactive",
+                        "interactive": {
+                           "type": "list_reply",
+                           "list_reply": {
+                              "id": "{{option_id}}",
+                              "title": "Bonjour"
+                           }
+                        }
+                     }
+                  ]
+               },
+               "field": "messages"
+            }
+         ]
+      }
+   ]
+}

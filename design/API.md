@@ -27,7 +27,7 @@
 [
    {
       id: String,
-      name: String,
+      title: String,
       body: String,
       media: [
          {
@@ -134,8 +134,8 @@
 ]
 ```
 
+
 ### Delete contact
 **DELETE** `/api/contacts/:id`
-<hr>
 
 <hr>

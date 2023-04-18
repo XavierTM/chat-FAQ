@@ -1,0 +1,39 @@
+{
+   "object": "whatsapp_business_account",
+   "entry": [
+      {
+         "id": "103829105733386",
+         "changes": [
+            {
+               "value": {
+                  "messaging_product": "whatsapp",
+                  "metadata": {
+                     "display_phone_number": "{{wa_receiver_phone}}",
+                     "phone_number_id": "{{wa_receiver_phone_id}}"
+                  },
+                  "contacts": [
+                     {
+                        "profile": {
+                           "name": "{{wa_sender_profile_name}}"
+                        },
+                        "wa_id": "{{wa_sender_phone}}"
+                     }
+                  ],
+                  "messages": [
+                     {
+                        "from": "{{wa_sender_phone}}",
+                        "id": "wamid.HBgMMjYzNzg4NTE4MTE5FQIAEhgUM0E3MTBGQ0UwQ0M2MUQ3RDRCRTUA",
+                        "timestamp": "1679662560",
+                        "text": {
+                           "body": "{{text}}"
+                        },
+                        "type": "text"
+                     }
+                  ]
+               },
+               "field": "messages"
+            }
+         ]
+      }
+   ]
+}

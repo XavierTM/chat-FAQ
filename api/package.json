@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test PORT=8081 mocha --exit --ui tdd",
     "start": "node .",
     "dev": "nodemon ."
   },
@@ -12,8 +12,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@xavisoft/joi": "^0.1.0",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "morgan": "^1.10.0",
+    "sequelize": "^6.31.0",
+    "sqlite3": "^5.1.6",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "axios": "^1.3.5",
+    "casual": "^1.6.2",
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "chai-spies": "^1.0.0",
+    "mocha": "^10.2.0",
+    "random-base64-string": "^1.0.1"
   }
 }
