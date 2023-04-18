@@ -226,7 +226,7 @@ suite('API tests', function() {
          assert.isNumber(res.body.id);
 
          // check db
-         const contact = await Contact.findOne({ order: [ 'id', 'DESC' ] });
+         const contact = await Contact.findOne({ order: [[ 'id', 'DESC' ]] });
          assert.isObject(contact);
          assert.equal(contact.name, payload.name);
          assert.equal(contact.email, payload.email);
@@ -260,7 +260,7 @@ suite('API tests', function() {
 
       test('Delete contact', async () => {
 
-         const contact = await createContact();
+         let contact = await createContact();
 
 
          const res = await requester

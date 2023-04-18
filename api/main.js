@@ -9,6 +9,7 @@ const { init: initDB } = require('./db');
 const morgan = require('morgan');
 const branches = require('./branches');
 const media = require('./media');
+const contacts = require('./contacts');
 
 
 const app = express();
@@ -23,6 +24,7 @@ app.use(express.json());
 // routes
 app.use('/api/branches', branches);
 app.use('/api/media', media);
+app.use('/api/contacts', contacts);
 
 
 app.get('*', (req, res) => {
