@@ -9,6 +9,7 @@
 {
    title: String,
    body: String,
+   parent: Number
 }
 ```
 
