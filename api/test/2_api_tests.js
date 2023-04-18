@@ -82,7 +82,7 @@ suite('API tests', function() {
          assert.isArray(res.body);
 
          assert.isObject(res.body[0]);
-         assert.isNumber(res.body[0]);
+         assert.isNumber(res.body[0].id);
          assert.isString(res.body[0].title);
          assert.isString(res.body[0].body);
          assert.isArray(res.body[0].media);
@@ -122,10 +122,10 @@ suite('API tests', function() {
 
          // check schema
          assert.isObject(res.body);
-         assert.isString(res.body[0].name);
-         assert.isString(res.body[0].body);
-         assert.isArray(res.body[0].media);
-         assert.isArray(res.body[0].branches);
+         assert.isString(res.body.name);
+         assert.isString(res.body.body);
+         assert.isArray(res.body.media);
+         assert.isArray(res.body.branches);
 
          // subsequent message
          const topLevelBranch = topLevelBranches[0];
@@ -135,6 +135,8 @@ suite('API tests', function() {
             .get(`/api/branches/${topLevelBranch.id}`)
             .send();
 
+         assert.equal(res.status, 200);
+         
          // check schema
          assert.equal(res.body.branches.length, branches.length);
 

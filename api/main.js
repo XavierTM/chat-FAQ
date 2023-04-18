@@ -7,6 +7,7 @@ require('./env');
 const express = require('express');
 const { init: initDB } = require('./db');
 const morgan = require('morgan');
+const branches = require('./branches');
 
 
 const app = express();
@@ -19,6 +20,7 @@ app.use(express.static(`${__dirname}/static`));
 app.use(express.json());
 
 // routes
+app.use('/api/branches', branches);
 
 
 app.get('*', (req, res) => {

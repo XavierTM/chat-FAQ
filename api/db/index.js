@@ -35,11 +35,19 @@ async function init() {
       onDelete: 'CASCADE',
    });
 
+   Branch.hasMany(Media, {
+      foreignKey: {
+         name: 'branch',
+      },
+      as: '__media',
+   });
+
+
    /// Media
    Media.belongsTo(Branch, {
       foreignKey: {
          name: 'branch',
-         allowNull: true,
+         allowNull: false,
       },
       onDelete: 'CASCADE',
    });
