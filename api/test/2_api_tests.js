@@ -8,8 +8,6 @@ const chaiHttp = require('chai-http');
 const chaiSpies = require('chai-spies');
 const Branch = require("../db/Branch");
 const Media = require("../db/Media");
-const randomString = require('random-base64-string');
-const randomBase64String = require("random-base64-string");
 const fs = require('fs/promises');
 const { MEDIA_DIR } = require("../constants");
 const Contact = require("../db/Contact");
@@ -26,7 +24,7 @@ suite('API tests', function() {
       await waitForServer();
 
       // create spies on fs
-      chai.spy.on(fs, [ 'writeFile', 'unlink' ]);
+      chai.spy.on(fs, [ 'writeFile', 'unlink' ], () => {});
 
       chai.spy.on(fs, 'readFile', () => {
          const array = [];
@@ -136,7 +134,7 @@ suite('API tests', function() {
             .send();
 
          assert.equal(res.status, 200);
-         
+
          // check schema
          assert.equal(res.body.branches.length, branches.length);
 
@@ -153,7 +151,7 @@ suite('API tests', function() {
 
          const payload = {
             ext: casual.random_element([ 'pdf', 'png', 'docx' ]),
-            data: randomBase64String(casual.integer(100, 200)),
+            data: "iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
             branch: branch.id,
          }
 

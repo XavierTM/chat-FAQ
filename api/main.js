@@ -8,6 +8,7 @@ const express = require('express');
 const { init: initDB } = require('./db');
 const morgan = require('morgan');
 const branches = require('./branches');
+const media = require('./media');
 
 
 const app = express();
@@ -21,6 +22,7 @@ app.use(express.json());
 
 // routes
 app.use('/api/branches', branches);
+app.use('/api/media', media);
 
 
 app.get('*', (req, res) => {
