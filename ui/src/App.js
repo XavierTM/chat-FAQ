@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+
+import AppWrapper, { Route } from '@xavisoft/app-wrapper'
 import './App.css';
+import Navbar from './components/Navbar';
+import Login from './pages/Login';
+import { Provider } from 'react-redux';
+import store from './store';
+import Home from './pages/Home';
+
+function setDimensions() {
+  
+  const width = window.innerWidth + 'px';
+  const height = window.innerHeight + 'px';
+
+  document.documentElement.style.setProperty('--window-width', width);
+  document.documentElement.style.setProperty('--window-height', height);
+
+}
+
+window.addEventListener('resize', setDimensions);
+setDimensions();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <AppWrapper>
+
+        <Navbar />
+
+        <Route path="/" component={Home} />
+        <Route path="/login" component={Login} />
+
+      </AppWrapper>
+    </Provider>
   );
 }
 
