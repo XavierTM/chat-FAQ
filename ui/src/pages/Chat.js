@@ -1,7 +1,7 @@
 
 import { Button } from '@mui/material';
 import request from '../request';
-import { delay } from '../utils';
+import { delay, formatLinks, formatNewLines } from '../utils';
 import Page from './Page';
 import MediaThumbnail from '../components/MediaThumbnail';
 
@@ -25,6 +25,13 @@ export default class Chat extends Page {
 
    state = {
       chatHistory: [],
+   }
+
+   updateState(update={}) {
+      return new Promise((resolve) => {
+         const newState = { ...this.state, ...update}
+         this.setState(newState, resolve);
+      })
    }
 
    addMessageToChat = async (body, direction) => {
@@ -56,7 +63,7 @@ export default class Chat extends Page {
          <h4 className='my-1'>{responseData.title}</h4>
 
          <p>
-            {responseData.body}
+            {formatNewLines(formatLinks(responseData.body))}
          </p>
 
          {

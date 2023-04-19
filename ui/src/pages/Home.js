@@ -6,7 +6,7 @@ function Item(props) {
    const { to, caption } = props;
 
    return <div>
-      <Link to={to} className="text-lg no-underline bg-gray-100 block p-4 m-4">
+      <Link to={to} className="text-lg no-underline bg-gray-100 block p-4 m-4 text-[#00E]">
          {caption}
       </Link>
    </div>

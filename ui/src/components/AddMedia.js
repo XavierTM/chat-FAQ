@@ -62,7 +62,7 @@ export default class AddMedia extends Component {
 
             <Base64FileInput
                id="txt-media"
-               accept="application/pdf,image/*"
+               accept="image/*"
             />
          </DialogContent>
 
