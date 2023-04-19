@@ -16,10 +16,10 @@ export default class SideMenu extends Component {
 
       const headerJSX = this.props.header || <h1 style={{ backgroundColor:'#1976d2', margin: 0, padding: 20 }}>Menu</h1>;
       
-      return <div style={{ width: '300px', backgroundColor:'#1976d2', height: 'var(--window-height)', margin: 0, color: 'white', position: 'relative' }}>
+      return <div style={{ width: '100%', backgroundColor:'#1976d2', height: 'var(--window-height)', margin: 0, color: 'white', position: 'relative' }}>
          <ProSidebarProvider>
             {headerJSX}
-            <Sidebar width="300px" backgroundColor='#1976d2'>
+            <Sidebar width="100%" backgroundColor='#1976d2'>
                <Menu>
                   {
                      this.props.items.map(item => {

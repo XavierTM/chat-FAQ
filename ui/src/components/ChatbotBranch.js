@@ -82,7 +82,7 @@ export default class ChatbotBranch extends Component {
 
                <Divider className="my-4" />
 
-               <h6 className="text-gray-600 font-bold text-sm mt-1 mb-3">Sub-options</h6>
+               <h6 className="text-gray-600 font-bold text-sm mt-1 mb-3">SUB-OPTIONS</h6>
 
                {
                   this.props.branches.map(item => {
@@ -106,7 +106,7 @@ export default class ChatbotBranch extends Component {
 
                <Divider className="my-4" />
 
-               <h6 className="text-gray-600 font-bold text-sm mt-1 mb-3">Media</h6>
+               <h6 className="text-gray-600 font-bold text-sm mt-1 mb-3">MEDIA</h6>
 
                {
                   this.props.media.map(item => {
@@ -127,7 +127,7 @@ export default class ChatbotBranch extends Component {
 
          expandedJSX = <>
             
-            <div className="text-lg text-gray-500 px-4 my-3" style={{ borderLeft: '5px solid grey', }}>
+            <div className="text-lg text-gray-500 px-4 my-3" style={{ borderLeft: '5px solid grey', wordBreak: 'break-word' }}>
                {formatLinks(formatNewLines(this.props.body))}
             </div>
 
@@ -155,15 +155,15 @@ export default class ChatbotBranch extends Component {
                {this.props.title}
 
                <IconButton className="ml-5" size="small" onClick={this.addBranch}>
-                  <AddIcon />
+                  <AddIcon fontSize="small" />
                </IconButton>
 
                <IconButton size="small" onClick={this.addMedia}>
-                  <AttachFileIcon />
+                  <AttachFileIcon fontSize="small" />
                </IconButton>
 
                <IconButton size="small" onClick={this.deleteBranch}>
-                  <DeleteIcon />
+                  <DeleteIcon fontSize="small" />
                </IconButton>
             </div>
             {expandedJSX}

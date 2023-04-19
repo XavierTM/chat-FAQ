@@ -31,7 +31,7 @@ export default function Contact(props) {
          }}
       >{props.bio}</p>
 
-      <Divider />
+      <Divider className="mb-5" />
 
       {actionsJSX}
    </div>

@@ -98,7 +98,7 @@ export default class ContactManager extends Component {
          }
 
          return <div className="m-2">
-            <h4>
+            <h4 className="font-extrabold text-gray-500 text-xl">
                CONTACTS
                <IconButton onClick={this.openContactEditor}>
                   <AddIcon />

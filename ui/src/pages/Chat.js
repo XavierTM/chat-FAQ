@@ -15,7 +15,7 @@ function Message(props) {
    const textAlign = props.direction === MESSAGE_DIRECTIONS.INCOMING ? 'left' : 'right';
 
    return <div style={{ textAlign }}>
-      <div className='rounded-lg text-sm bg-gray-100 inline-block text-left m-2 p-2' style={{ minWidth: 100, maxWidth: '70%' }}>
+      <div className='rounded-lg text-sm bg-gray-100 inline-block text-left m-2 p-2' style={{ minWidth: 100, maxWidth: '70%', wordBreak: 'break-word' }}>
          {props.body}
       </div>
    </div>

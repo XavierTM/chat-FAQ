@@ -33,7 +33,7 @@ class Navbar extends Component {
       let jsx;
 
       if (this.props.currentRoute.indexOf('/dashboard') === -1)
-         jsx = <h1>CHAT-FAQ</h1>
+         jsx = <h2 className="font-extrabold text-2xl">CHAT-FAQ</h2>
       
       return <AppBar style={{ paddingLeft: 20 }} id="navbar">
          {jsx}

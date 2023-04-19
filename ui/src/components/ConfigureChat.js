@@ -267,13 +267,13 @@ class ConfigureChat extends Component {
 
          <div className="fill-container" style={{ overflowY: 'auto' }}>
             <div className="p-3">
-               <h4>CONFIGURE YOUR CHATBOT</h4>
+               <h4 className="text-gray-600 font-extrabold text-lg">CONFIGURE YOUR CHATBOT</h4>
 
-               <h4 className="text-lg font-extrabold">
+               <h4 className="text-xl font-extrabold valign">
                   BRANCHES
 
-                  <IconButton size="large" onClick={this.openBranchEditor}>
-                     <AddIcon />
+                  <IconButton onClick={this.openBranchEditor} color="primary">
+                     <AddIcon fontSize="large" />
                   </IconButton>
                </h4>
 

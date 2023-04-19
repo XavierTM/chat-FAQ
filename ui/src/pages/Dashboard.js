@@ -48,24 +48,31 @@ export default class Dashboard extends Page {
 
       if (this.state.showingSideMenu) {
 
-         sideMenuJSX = <ClickAwayListener onClickAway={this.closeSideMenu}>
-            <div
+         sideMenuJSX = <div
                style={{
                   position: 'fixed',
                   top: 0,
                   bottom: 0,
                   left: 0,
-                  width: 300,
+                  right: 0,
                   padding: 0,
+                  background: 'rgba(0, 0, 0, 0.90)'
                }}
             >
-               <SideMenu
-                  items={menuItems}
-                  current={this.state.currentSideMenuValue}
-                  onChange={this.onSideMenuChange}
-               />
+               <ClickAwayListener onClickAway={this.closeSideMenu}>
+                  <div style={{
+                     width: 250,
+                     height: '100%',
+                  }}>
+                     <SideMenu
+                        items={menuItems}
+                        current={this.state.currentSideMenuValue}
+                        onChange={this.onSideMenuChange}
+                     />
+                  </div>
+               </ClickAwayListener>
             </div>
-         </ClickAwayListener>
+            
       }
 
       let contentAreaJSX;
@@ -86,12 +93,12 @@ export default class Dashboard extends Page {
       return <>
          <div style={{ gridTemplateRows: '70px auto'}} className='grid fill-container'>
             
-            <div className='v-align' style={{ borderBottom: '1px grey solid'}}>
-               <IconButton onClick={this.openSideMenu}>
-                  <MenuIcon />
+            <div className='v-align bg-[#1979D2] text-white' style={{ borderBottom: '1px grey solid'}}>
+               <IconButton onClick={this.openSideMenu} className='text-white mx-2'>
+                  <MenuIcon fontSize='large' />
                </IconButton>
 
-               <h4 className='text-2xl'>Dashboard</h4>
+               <h4 className='text-2xl'>DASHBOARD</h4>
 
             </div>
 
