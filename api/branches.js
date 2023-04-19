@@ -37,7 +37,7 @@ branches.get('/', async (req, res) => {
 
       // retrieve
       let branches = await Branch.findAll({
-         attributes: [ 'id', 'title', 'body' ],
+         attributes: [ 'id', 'title', 'body', 'parent' ],
          include: {
             model: Media,
             as: '__media',

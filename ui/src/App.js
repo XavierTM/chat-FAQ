@@ -6,6 +6,8 @@ import Login from './pages/Login';
 import { Provider } from 'react-redux';
 import store from './store';
 import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
+import Chat from './pages/Chat';
 
 function setDimensions() {
   
@@ -29,6 +31,8 @@ function App() {
 
         <Route path="/" component={Home} />
         <Route path="/login" component={Login} />
+        <Route path="/dashboard" component={Dashboard} />
+        <Route path="/chat" component={Chat} />
 
       </AppWrapper>
     </Provider>

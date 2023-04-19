@@ -2,17 +2,10 @@ import { Button } from "@mui/material";
 import Component from "@xavisoft/react-component";
 import { Menu, MenuItem, ProSidebarProvider, Sidebar } from "react-pro-sidebar";
 import ArrowBackIcon from '@mui/icons-material/ArrowBackIosNew';
-import swal from "sweetalert";
-import request from "../request";
 
 
-async function logout() {
-   try {
-      await request.delete('/api/login');
-      window.App.redirect('/login');
-   } catch (err) {
-      swal(String(err));
-   }
+function logout() {
+   window.App.redirect('/login');
 }
 
 
@@ -20,7 +13,7 @@ export default class SideMenu extends Component {
 
    render() {
 
-      const headerJSX = this.props.header || <h1 style={{ paddingLeft: 20 }}>Menu</h1>;
+      const headerJSX = this.props.header || <h1 style={{ backgroundColor:'#1976d2', margin: 0, padding: 20 }}>Menu</h1>;
       
       return <div style={{ width: '300px', backgroundColor:'#1976d2', height: 'var(--window-height)', margin: 0, color: 'white', position: 'relative' }}>
          <ProSidebarProvider>
