@@ -8,6 +8,7 @@ import store from './store';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Chat from './pages/Chat';
+import Contacts from './pages/Contacts';
 
 function setDimensions() {
   
@@ -33,6 +34,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/dashboard" component={Dashboard} />
         <Route path="/chat" component={Chat} />
+        <Route path="/contacts" component={Contacts} />
 
       </AppWrapper>
     </Provider>
