@@ -5,7 +5,7 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import AddIcon from "@mui/icons-material/Add";
 import DeleteIcon from "@mui/icons-material/Delete";
 import AttachFileIcon from '@mui/icons-material/AttachFile';
-import { requestConfirmation } from "../utils";
+import { formatLinks, formatNewLines, requestConfirmation } from "../utils";
 import { hideLoading, showLoading } from "../loading";
 import swal from "sweetalert";
 import request from "../request";
@@ -128,7 +128,7 @@ export default class ChatbotBranch extends Component {
          expandedJSX = <>
             
             <div className="text-lg text-gray-500 px-4 my-3" style={{ borderLeft: '5px solid grey', }}>
-               {this.props.body}
+               {formatLinks(formatNewLines(this.props.body))}
             </div>
 
             {subOptionsJSX}

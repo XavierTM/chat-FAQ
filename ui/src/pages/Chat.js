@@ -120,6 +120,11 @@ export default class Chat extends Page {
       
    }
 
+   componentDidMount() {
+      super.componentDidMount();
+      document.getElementById('txt-message').focus();
+   }
+
    _render() {
       const chatHistoryJSX = this.state.chatHistory.map(message => <Message {...message} />);
 
@@ -139,7 +144,7 @@ export default class Chat extends Page {
 
          <div className='v-align px-5'>
 
-            <div className='bg-teal-700 text-white px-5 py-2 rounded-xl' style={{ width: '100%' }}>
+            <div className='bg-[#1979D2] text-white px-5 py-2 rounded-xl' style={{ width: '100%' }}>
 
                <input
                   type='text'
@@ -150,7 +155,8 @@ export default class Chat extends Page {
                      background: 'transparent',
                      outline: 'none',
                      border: 'none',
-                     color: 'currentcolor'
+                     color: 'currentcolor',
+                     width: '100%'
                   }}
                   className='placeholder-white'
                />
