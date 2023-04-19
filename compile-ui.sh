@@ -6,7 +6,7 @@ npm run build
 cd  ..
 
 # move to www
-mv www/.gitignore __temp__.gitignore
-rm -rf www
-mv build www
-mv __temp__.gitignore www/.gitignore
+mv app/www/.gitignore __temp__.gitignore
+rm -rf app/www
+mv ui/build app/www
+mv __temp__.gitignore app/www/.gitignore
