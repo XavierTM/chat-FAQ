@@ -26,7 +26,7 @@ setDimensions();
 function App() {
   return (
     <Provider store={store}>
-      <AppWrapper>
+      <AppWrapper router="hash">
 
         <Navbar />
 
