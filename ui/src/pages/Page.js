@@ -5,7 +5,7 @@ import actions from '../actions';
 class Page extends Component {
 
    componentDidMount() {
-      const route = window.location.pathname
+      const route = window.location.hash ? window.location.hash.substring(1) : '/'
       actions.setCurrentRoute(route);
    }
 
