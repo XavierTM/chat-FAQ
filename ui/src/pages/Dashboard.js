@@ -33,6 +33,14 @@ export default class Dashboard extends Page {
       return this.updateState(update);
    }
 
+   componentDidMount() {
+      super.componentDidMount();
+
+      if (!window.authenticated)
+         window.App.redirect('/login');
+         
+   }
+
    
    _render() {
 

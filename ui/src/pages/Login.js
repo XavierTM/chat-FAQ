@@ -21,9 +21,6 @@ const divLoginStyle = css({
 
 class Login extends Page {
 
-
-  
-
    login = async () => {
 
       // check
@@ -46,6 +43,7 @@ class Login extends Page {
       if (email.toLowerCase() !== 'xavier@gmail.com' || password !== 'admin')
          return errorToast('Invalid credentials');
 
+      window.authenticated = true;
       window.App.redirect('/dashboard');
 
       

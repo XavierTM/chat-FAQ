@@ -5,7 +5,8 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBackIosNew';
 
 
 function logout() {
-   window.App.redirect('/login');
+   window.authenticated = false;
+   window.App.redirect('/');
 }
 
 
