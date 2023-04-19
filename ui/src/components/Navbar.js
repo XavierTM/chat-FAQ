@@ -21,6 +21,8 @@ function updateApiUrl() {
       return;
    }
 
+   window.App.apiUrl = url;
+
 }
 
 
