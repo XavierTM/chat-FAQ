@@ -30,12 +30,6 @@ app.use('/api/media', media);
 app.use('/api/contacts', contacts);
 
 
-app.get('*', (req, res) => {
-   const indexFile = `${__dirname}/static/index.html`;
-   res.sendFile(indexFile);
-});
-
-
 // initialization
 const PORT = process.env.PORT;
 

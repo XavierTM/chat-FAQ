@@ -1,6 +1,27 @@
 import Component from "@xavisoft/react-component";
 import AppBar from '@mui/material/AppBar';
 import { connect } from "react-redux";
+import DnsIcon from '@mui/icons-material/Dns';
+import { IconButton } from "@mui/material";
+import swal from "sweetalert";
+
+
+function updateApiUrl() {
+
+   let url = window.App.apiUrl;
+   url = window.prompt('Provide server url:', url);
+
+   if (!url)
+      return;
+
+   const regex = /^http:\/\/\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}:\d{4}$/
+
+   if (!regex.test(url)) {
+      swal('Invalid server url. It should be in the format: http://XXX.XXX.XXX.XXX:XXXX');
+      return;
+   }
+
+}
 
 
 
@@ -32,10 +53,27 @@ class Navbar extends Component {
 
       let jsx;
 
-      if (this.props.currentRoute.indexOf('/dashboard') === -1)
-         jsx = <h2 className="font-extrabold text-2xl">CHAT-FAQ</h2>
+      if (this.props.currentRoute.indexOf('/dashboard') === -1) {
+         jsx = <>
+            <h2 className="font-extrabold text-2xl">CHAT-FAQ</h2>
+            
+            <div 
+               style={{
+                  position: 'absolute',
+                  top: 0,
+                  bottom: 0,
+                  right: 20,
+               }}
+               className="v-align"
+            >
+               <IconButton className="text-white" onClick={updateApiUrl}>
+                  <DnsIcon fontSize="large" />
+               </IconButton>
+            </div>
+         </>
+      }
       
-      return <AppBar style={{ paddingLeft: 20 }} id="navbar">
+      return <AppBar style={{ paddingLeft: 20, position: 'relative' }} id="navbar">
          {jsx}
       </AppBar>
    }

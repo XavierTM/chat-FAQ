@@ -18,18 +18,14 @@ class AxiosError extends Error {
 
 const request = axios;
 
-function domainInterceptor(domain) {
-   axios.interceptors.request.use(config => {
-      config.url = `${domain}${config.url}`;
-      return config;
-   })
-}
+window.App.apiUrl = 'http://127.0.0.1:8080';
 
-if (window.cordova) {
-   domainInterceptor('http://some-ip-address:8080')
-} else {
-   domainInterceptor('http://localhost:8080');
-}
+axios.interceptors.request.use(config => {
+   const domain = window.App.apiUrl || '';
+   config.url = `${domain}${config.url}`;
+   return config;
+});
+
 
 
 axios.interceptors.response.use(null, err => {
