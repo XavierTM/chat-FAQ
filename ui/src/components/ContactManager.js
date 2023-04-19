@@ -87,6 +87,7 @@ export default class ContactManager extends Component {
                return <Contact 
                   {...contact}
                   delete={this.deleteContact}
+                  adminMode
                />
                
             }) ;

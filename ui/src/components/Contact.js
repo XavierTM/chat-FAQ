@@ -4,6 +4,22 @@ import DeleteIcon from '@mui/icons-material/Delete';
 
 export default function Contact(props) {
 
+   let actionsJSX
+
+   if (props.adminMode) {
+      actionsJSX = <div 
+         style={{ 
+            position: 'absolute',
+            bottom: 10,
+            right: 10,
+         }}
+      >
+         <IconButton onClick={() => props.delete(props.id)}>
+            <DeleteIcon color="error" />
+         </IconButton>
+      </div>
+   }
+
    return <div style={{ position: 'relative'}}>
       <div className="text-2xl font-bold">{props.name}</div>
       <div className="text-xl text-gray-500 font-bold">{props.email}</div>
@@ -17,16 +33,6 @@ export default function Contact(props) {
 
       <Divider />
 
-      <div 
-         style={{ 
-            position: 'absolute',
-            bottom: 10,
-            right: 10,
-         }}
-      >
-         <IconButton onClick={() => props.delete(props.id)}>
-            <DeleteIcon color="error" />
-         </IconButton>
-      </div>
+      {actionsJSX}
    </div>
 }
