@@ -1,28 +1,12 @@
 import Component from "@xavisoft/react-component";
 import AppBar from '@mui/material/AppBar';
 import { connect } from "react-redux";
-import DnsIcon from '@mui/icons-material/Dns';
+import HomeIcon from '@mui/icons-material/Home';
 import { IconButton } from "@mui/material";
-import swal from "sweetalert";
 
 
-function updateApiUrl() {
-
-   let url = window.App.apiUrl;
-   url = window.prompt('Provide server url:', url);
-
-   if (!url)
-      return;
-
-   const regex = /^http:\/\/\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}:\d{4}$/
-
-   if (!regex.test(url)) {
-      swal('Invalid server url. It should be in the format: http://XXX.XXX.XXX.XXX:XXXX');
-      return;
-   }
-
-   window.App.apiUrl = url;
-
+function goHome() {
+   window.App.redirect('/');
 }
 
 
@@ -68,8 +52,8 @@ class Navbar extends Component {
                }}
                className="v-align"
             >
-               <IconButton className="text-white" onClick={updateApiUrl}>
-                  <DnsIcon fontSize="large" />
+               <IconButton className="text-white" onClick={goHome}>
+                  <HomeIcon fontSize="large" />
                </IconButton>
             </div>
          </>

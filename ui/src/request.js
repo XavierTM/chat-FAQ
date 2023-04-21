@@ -18,10 +18,9 @@ class AxiosError extends Error {
 
 const request = axios;
 
-window.App.apiUrl = 'http://127.0.0.1:8080';
+const domain = window.cordova? 'https://chat-faq.xavisoft.co.zw' : 'http://127.0.0.1:8080';
 
 axios.interceptors.request.use(config => {
-   const domain = window.App.apiUrl || '';
    config.url = `${domain}${config.url}`;
    return config;
 });
