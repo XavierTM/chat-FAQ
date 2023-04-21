@@ -40,7 +40,7 @@ class Login extends Page {
          return txtPassword.focus();
       }
 
-      if (email.toLowerCase() !== 'xavier@gmail.com' || password !== 'admin')
+      if (email.toLowerCase() !== 'tatendasatukur@gmail.com' || password !== 'admin')
          return errorToast('Invalid credentials');
 
       window.authenticated = true;
