@@ -24,8 +24,8 @@ export default class Home extends Page {
    _render() {
 
       return <div className="fill-container vh-align">
-         <div className="text-center text-gray-700" style={{ width: '100%' }}>
-            <h1 className="text-5xl">Welcome</h1>
+         <div className="text-gray-700 p-3" style={{ width: '100%' }}>
+            <h1 className="text-2xl text-center">Welcome to Solar Irrigation<br/>Technical Advisory<br/>Platform</h1>
 
             {
                links.map(link => <Item {...link} />)
